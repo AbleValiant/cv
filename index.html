@@ -1,155 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fastest free online image modification</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="description" content="Fastest free online image modification">
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Drum Kit</title>
-  <style>
-    body{
-  text-align: center;
-  background-color: #283149;
-}
+  <header class="text-gray-700 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">tailblocks</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">First Link</a>
+        <a class="mr-5 hover:text-gray-900">Second Link</a>
+        <a class="mr-5 hover:text-gray-900">Third Link</a>
+        <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+      </nav>
+    
+    </div>
+  </header>
 
-h1 {
-  font-size: 5rem;
-  color: #DBEDF3;
-  font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  <body>
+<%- include('partials/header') %>
 
-}
-
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
-}
-
-.w {
-  background-image: url("images/tom1.png");
-}
-
-.a {
-  background-image: url("images/tom2.png");
-}
-
-.s {
-  background-image: url("images/tom3.png");
-}
-
-.d {
-  background-image: url("images/tom4.png");
-}
-
-.j {
-  background-image: url("images/snare.png");
-}
-
-.k {
-  background-image: url("images/crash.png");
-}
-
-.l {
-  background-image: url("images/kick.png");
-}
-
-.set {
-  margin: 10% auto;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
-}
-
-.drum {
-  outline: none;
-  border: 10px solid #404B69;
-  font-size: 5rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 10px;
-  background-color: white;
-}
-  </style>
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-</head>
-
-<body>
-  <h1 id="title">Drum 🥁 Kit</h1>
-  <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
-  </div>
-
-
-<script src="index.js" charset="utf-8"></script>
-
-<footer>
-  Made with ❤️ by Shubhu.
-</footer>
-<script>
-var noOfButtons = document.querySelectorAll(".drum").length;
-var bandObject = document.querySelectorAll(".drum");
-for (var i = 0; i < noOfButtons; i++) {
-  bandObject[i].addEventListener("click", function(){
-  var buttonInnerHTML = this.innerHTML;
-  switch (buttonInnerHTML) {
-    case "w":
-    var tom1 = new Audio("sounds/tom-1.mp3");
-    tom1.play();
-     break;
-
-     case "a":
-     var tom2 = new Audio("sounds/tom-2.mp3");
-     tom2.play();
-      break;
-
-      case "s":
-      var tom3 = new Audio("sounds/tom-3.mp3");
-      tom3.play();
-       break;
-
-       case "d":
-       var tom4 = new Audio("sounds/tom-4.mp3");
-       tom4.play();
-        break;
-
-        case "j":
-        var snare = new Audio("sounds/snare.mp3");
-        snare.play();
-         break;
-
-         case "k":
-         var crash = new Audio("sounds/crash.mp3");
-         crash.play();
-          break;
-
-          case "l":
-          var kick = new Audio("sounds/kick-bass.mp3");
-          kick.play();
-           break;
-    default: console.log(buttonInnerHTML+ "Not added to Switch List");
-
-  }
-  });
-}
-
-</script>
-</body>
+<section class="text-gray-700 body-font">
+ <div class="container px-5 py-24 mx-auto">
+   <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+     <p class="lg:w-1/2 w-full leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+   </div>
+   <div class="flex flex-wrap -m-4">
+     <div class="xl:w-1/3 md:w-1/2 p-4"><a href="/compress-img">
+       <div class="border border-gray-300 p-6 rounded-lg">
+         <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+             <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+           </svg>
+         </div>
+         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+       </div></a>
+     </div>
+     <div class="xl:w-1/3 md:w-1/2 p-4"><a href="/convert-to-jpg">
+       <div class="border border-gray-300 p-6 rounded-lg">
+         <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+             <circle cx="6" cy="6" r="3"></circle>
+             <circle cx="6" cy="18" r="3"></circle>
+             <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+           </svg>
+         </div>
+         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+       </div></a>
+     </div>
+     <div class="xl:w-1/3 md:w-1/2 p-4"><a href="/jpg-to-img">
+       <div class="border border-gray-300 p-6 rounded-lg">
+         <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+             <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+             <circle cx="12" cy="7" r="4"></circle>
+           </svg>
+         </div>
+         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
+         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+       </div></a>
+     </div>
+     <div class="xl:w-1/3 md:w-1/2 p-4"><a href="/resize-image">
+       <div class="border border-gray-300 p-6 rounded-lg">
+         <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+             <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+           </svg>
+         </div>
+         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+       </div></a>
+     </div>
+     <div class="xl:w-1/3 md:w-1/2 p-4"><a href="crop-image">
+       <div class="border border-gray-300 p-6 rounded-lg">
+         <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+             <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+           </svg>
+         </div>
+         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
+         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+       </div></a>
+     </div>
+     <div class="xl:w-1/3 md:w-1/2 p-4"><a href="/rotate-image">
+       <div class="border border-gray-300 p-6 rounded-lg">
+         <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
+           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+           </svg>
+         </div>
+         <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
+         <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+       </div></a>
+     </div>
+   </div>
+   <button class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+ </div>
+</section>
+  </body>
 </html>
